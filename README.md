@@ -7,6 +7,7 @@ Adjust this number if there are more or less jobs listed on the search page.
 
 ## 2 Goals:
 The goal is to be able to search through seek job listings and save to csv for statistical analysis.
+Statistical analysis is then performed to determine the number of times a word or phrase appears in the job description.
 
 ## 3 Steps:
 - Install Selenium --> https://pypi.org/project/selenium/
@@ -27,3 +28,8 @@ The goal is to be able to search through seek job listings and save to csv for s
 - Wait for the search to occur and add the number of jobs listed on the top of the page that has opened in seek.
 - Press enter to run the program. The csv file will save and append for each search page it runs.
 - The number of pages scraped is calculated on 22 jobs per page on seek, this may change.
+
+## Analyse the data:
+- Analyse_data will check for words and phrases in the Excel files and return the number of times they appear.
+- The csv file above must be saved as a xlsx file and a column heading "Details" added to the job description column.
+- Run the program and enter the filename of the xlsx file to analyse and an output filename.
